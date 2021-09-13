@@ -37,9 +37,10 @@ $medewerkers = [
       'functie'  => 'Kickboxer'
     ]
   ];
-  foreach($medewerkers as $value => $key){
-      echo $value
+  for($i=0 ; $i<count($medewerkers); $i++){
+      echo $medewerkers[$i]['voornaam']." ".$medewerkers[$i]['achternaam']. " is een " . $medewerkers[$i]['functie'] ."<br>";
   }
+
     ?>
 </body>
 </html>

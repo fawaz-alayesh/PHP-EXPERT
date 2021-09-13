@@ -18,7 +18,9 @@ $speelgoed = [
         'prijs' => '39.00'
     ],
 ];
-
+for($i = 0 ; $i < count($speelgoed); $i++){
+    echo "Speelgoed " .$speelgoed[$i]['naam']. " uit de categorie ".$speelgoed[$i]['soort']." kost ". $speelgoed[$i]['prijs'] ."<br>";
+    }
 
 $games = [
     'sport' => [
@@ -37,3 +39,8 @@ $games = [
         'prijs' => '40.00'
     ]
 ];
+
+foreach($games as $value => $key){
+    echo "Speelgoed " .$key['naam'] . " van uitgever ".$key['uitgever'] ." kost ". $key['prijs'] ."<br>";
+  
+    }
