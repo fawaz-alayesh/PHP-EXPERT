@@ -43,4 +43,4 @@ $games = [
 foreach($games as $value => $key){
     echo "Speelgoed " .$key['naam'] . " van uitgever ".$key['uitgever'] ." kost ". $key['prijs'] ."<br>";
   
-    }
+}
